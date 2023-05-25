@@ -16,10 +16,10 @@
  */
 package org.superbiz.moviefun;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.superbiz.model.Movie;
 import org.superbiz.model.Movies;
 
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,7 +38,7 @@ public class ActionServlet extends HttpServlet {
 
     public static int PAGE_SIZE = 5;
 
-    @EJB
+    @Autowired
     private Movies moviesBean;
 
     @Override

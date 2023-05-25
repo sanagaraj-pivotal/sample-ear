@@ -79,6 +79,7 @@
   </build>
   <dependencyManagement>
     <dependencies>
+
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>javaee-api</artifactId>
